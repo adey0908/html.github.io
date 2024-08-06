@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+<script>
+    function app(){
+        let h2tag1 = document.createElement("h2");
+        h2tag1.innerHTML="This is my first JS App";
+
+        let p1 = document.createElement("p");
+        p1.innerHTML = "asdfd";
+
+        let div1 = document.createElement("div");
+        let div2 = document.createElement("div");
+        div1.appendChild(div2);
+
+        let h1tag1 = document.createElement("h1");
+        h1tag1.innerHTML = "Heading of";
+        div2.appendChild(h1tag1);
+
+        let rootTag = document.getElementById("root");
+        rootTag.appendChild(h2tag1);
+        rootTag.appendChild(p1);
+        rootTag.appendChild(div1);
+    }
+    app();
+</script>
+</body>
+</html>

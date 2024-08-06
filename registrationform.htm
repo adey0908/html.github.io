@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="validate.js"></script>
+<style>
+    h2,form{
+        color: rgb(3, 46, 64);
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: "Geneva", "Tahoma", sans-serif, "Times New Roman";
+    }
+</style>
+</head>
+<body>
+    <h2>Form Validation</h2>
+    <form name="myForm">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit" onclick="return validateName()">
+        Age: <input type="text" name="age">
+        <input type="submit" value="Submit" onclick="return validateAge()">
+        Location: <input type="text" name="location">
+        <input type="submit" value="Submit" onclick="return validateLocation()">
+    </form>
+
+    <p id="clear"></p>
+    <input type="button" value="Clear" onclick="refresh()"/>
+    
+</body>
+</html>
